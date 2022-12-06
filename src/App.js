@@ -21,4 +21,4 @@ function App({ signOut }) {
   );
 }
 
-export default App;
+export default withAuthenticator(App);
