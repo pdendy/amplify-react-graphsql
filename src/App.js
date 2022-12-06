@@ -1,5 +1,5 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "@aws-amplify/ui-react/styles.css";
 import {
   withAuthenticator,
   Button,
@@ -16,7 +16,7 @@ function App({ signOut }) {
         <Image src={logo} className="App-logo" alt="logo" />
         <Heading level={1}>We now have Auth!</Heading>
       </Card>
-      <Button onclick={signOut}>Sign</Button>
+      <Button onClick={signOut}>Sign Out</Button>
     </View>
   );
 }
